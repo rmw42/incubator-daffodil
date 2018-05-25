@@ -239,7 +239,7 @@ subcomponents is subject to the terms and conditions of the following licenses.
 
   This product bundles 'Scala', including the following files:
     - lib/org.scala-lang.modules.scala-parser-combinators_2.11-1.0.4.jar
-    - lib/org.scala-lang.modules.scala-xml_2.11-1.0.6.jar
+    - lib/org.scala-lang.modules.scala-xml_2.11-1.1.0.jar
     - lib/org.scala-lang.scala-library-2.11.8.jar
     - lib/org.scala-lang.scala-reflect-2.11.8.jar
     - org/apache/daffodil/util/UniquenessCache.class in lib/org.apache.daffodil.daffodil-lib-2.1.0.jar

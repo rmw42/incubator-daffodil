@@ -56,7 +56,7 @@
        Test Name: apos_test1
           Schema: apostrophe
             Root: record
-         Purpose: This test demonstrates that tdml runner correctly processes apostrophes (&apos;) within the infoset data (DAFFODIL-1928).
+         Purpose: This test demonstrates that tdml runner correctly processes literal apostrophes within the infoset data (DAFFODIL-1928).
   -->
 
 	<tdml:defineSchema name="apostrophe">
@@ -76,7 +76,7 @@
 
 		<tdml:infoset>
 			<tdml:dfdlInfoset>
-				<apostrophe>&apos;</apostrophe>
+				<apostrophe>'</apostrophe>
 			</tdml:dfdlInfoset>
 		</tdml:infoset>
 
@@ -98,6 +98,48 @@
 		<tdml:infoset>
 			<tdml:dfdlInfoset>
 				<apostrophe>'</apostrophe>
+			</tdml:dfdlInfoset>
+		</tdml:infoset>
+
+	</tdml:parserTestCase>
+
+  <!--
+       Test Name: apos_test3
+          Schema: apostrophe
+            Root: record
+         Purpose: This test demonstrates that tdml runner correctly processes apostrophes (&apos;) within the infoset data (DAFFODIL-1928).
+  -->
+	
+	<tdml:parserTestCase name="apos_test3"
+		root="apostrophe" model="apostrophe"
+		description="Can't deal properly with apostrophe (') marks within the document data in TDML " roundTrip="true">
+
+		<tdml:document>'</tdml:document>
+
+		<tdml:infoset>
+			<tdml:dfdlInfoset>
+				<apostrophe>&apos;</apostrophe>
+			</tdml:dfdlInfoset>
+		</tdml:infoset>
+
+	</tdml:parserTestCase>
+
+  <!--
+       Test Name: apos_test4
+          Schema: apostrophe
+            Root: record
+         Purpose: This test demonstrates that tdml runner correctly processes apostrophes (&apos;) within the document and infoset data (DAFFODIL-1928).
+  -->
+
+	<tdml:parserTestCase name="apos_test4"
+		root="apostrophe" model="apostrophe"
+		description="Can't deal properly with apostrophe (&apos;) marks within the document and infoset data in TDML " roundTrip="true">
+
+		<tdml:document>&apos;</tdml:document>
+
+		<tdml:infoset>
+			<tdml:dfdlInfoset>
+				<apostrophe>&apos;</apostrophe>
 			</tdml:dfdlInfoset>
 		</tdml:infoset>
 

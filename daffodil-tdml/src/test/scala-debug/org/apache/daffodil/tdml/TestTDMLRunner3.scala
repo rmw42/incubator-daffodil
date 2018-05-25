@@ -66,7 +66,8 @@ class TestTDMLRunner3 {
    *
    * Bug DAFFODIL-1928
    */
-  @Test def test_apos_test1() { runner.runOneTest("apos_test1") }
   @Test def test_apos_test2() { runner.runOneTest("apos_test2") }
+  @Test def test_apos_test3() { runner.runOneTest("apos_test3") }
+  @Test def test_apos_test4() { runner.runOneTest("apos_test4") }
 
 }

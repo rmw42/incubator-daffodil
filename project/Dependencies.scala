@@ -22,7 +22,7 @@ object Dependencies {
   lazy val common = core ++ infoset ++ test
 
   lazy val core = Seq(
-    "org.scala-lang.modules" %% "scala-xml" % "1.0.6",
+    "org.scala-lang.modules" %% "scala-xml" % "1.1.0",
     "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4",
     "com.ibm.icu" % "icu4j" % "51.1", // new versions avail. 58.1 requires code changes
     "xerces" % "xercesImpl" % "2.10.0",
